@@ -3,26 +3,43 @@ void WeightedTreeMaker()
    TFile *FProb = TFile::Open("weight_qcdfraction_inclusive.root");
    TFile *FFake = TFile::Open("weight_fakefactor_inclusive.root");  
    //probability
-   /*FP*/TH1F *leading_EB_FP_qcdfraction  = (TH1F*)FProb->Get("leading_EB_FP_qcdfraction");
+   /*FP*/
+   TH1F *leading_EB_FP_qcdfraction  = (TH1F*)FProb->Get("leading_EB_FP_qcdfraction");
    TH1F *leading_EE_FP_qcdfraction  = (TH1F*)FProb->Get("leading_EE_FP_qcdfraction");
-   /*PF*/TH1F *subleading_EB_PF_qcdfraction  = (TH1F*)FProb->Get("subleading_EB_PF_qcdfraction");
+   /*PF*/
+   TH1F *subleading_EB_PF_qcdfraction  = (TH1F*)FProb->Get("subleading_EB_PF_qcdfraction");
    TH1F *subleading_EE_PF_qcdfraction  = (TH1F*)FProb->Get("subleading_EE_PF_qcdfraction");
-   /*FF*/TH1F *leading_EB_FF_qcdfraction  = (TH1F*)FProb->Get("leading_EB_FF_qcdfraction");
+   /*FF*/
+/*
+   TH1F *leading_EB_FF_qcdfraction  = (TH1F*)FProb->Get("leading_EB_FF_qcdfraction");
    TH1F *leading_EE_FF_qcdfraction  = (TH1F*)FProb->Get("leading_EE_FF_qcdfraction");
    TH1F *subleading_EB_FF_qcdfraction  = (TH1F*)FProb->Get("subleading_EB_FF_qcdfraction");
    TH1F *subleading_EE_FF_qcdfraction  = (TH1F*)FProb->Get("subleading_EE_FF_qcdfraction");
-   //fakefacors 
+*/
+
+
+  //fakefacors
    TH1F *EB_leading_fakefactor = (TH1F*)FFake->Get("EB_leading_fakefactor");
    TH1F *EE_leading_fakefactor = (TH1F*)FFake->Get("EE_leading_fakefactor");
    TH1F *EB_subleading_fakefactor = (TH1F*)FFake->Get("EB_subleading_fakefactor");
    TH1F *EE_subleading_fakefactor = (TH1F*)FFake->Get("EE_subleading_fakefactor");
    
 
-   TFile *f = TFile::Open("output_Data.root");
-   TFile *fileout = new TFile("output_data_driven_bkg.root","recreate");
+
+
+   TFile *f = TFile::Open("output_Data_2017.root");
+   TFile *fileout = new TFile("output_data_driven_bkg_2017.root","recreate");
+
+   TDirectory* folder = fileout->mkdir("tagsDumper");
+
+   folder->cd();
+
+   TDirectory* trees = folder->mkdir("trees");
+
+   trees->cd();
 
    TTree *Tout = new TTree("bkg_13TeV_VBFTag_2","bkg_13TeV_VBFTag_2");
-   Float_t lumi =              1;
+   Float_t lumi =              1.0;
    Float_t         weight_;
    Float_t         CMS_hgg_mass_;
    Float_t         dZ_;
@@ -35,13 +52,24 @@ void WeightedTreeMaker()
    Float_t         D0minus_, dijet_dipho_pt_, dipho_PToM_, dipho_cosphi_, dipho_Eta_;
    Float_t         cos_thetaH_;
    Float_t         dipho_leadPt_, dipho_subleadPt_, dipho_leadEta_, dipho_subleadEta_, dipho_leadPhi_, dipho_subleadPhi_;
-   Float_t         dipho_pt_;
    Float_t         dipho_mva_;
+   Float_t	dipho_mass_;
+   Float_t	dipho_leadIDMVA_;
+   Float_t	dipho_subleadIDMVA_;
+   Float_t    	dipho_sumpt_;
+   Float_t 	dipho_lead_ptoM_;
+   Float_t 	dipho_sublead_ptoM_;
+   Float_t 	dijet_zep_;
+   Float_t 	dijet_abs_dEta_;
+   Float_t 	cos_dijet_dipho_dphi_;
+   Float_t 	dipho_lead_genmatch_, dipho_sublead_genmatch_;
+
 
    Tout->Branch("weight", &weight_, "weight/F");
    Tout->Branch("CMS_hgg_mass", &CMS_hgg_mass_, "CMS_hgg_mass/F");
    Tout->Branch("dZ", &dZ_, "dZ/F");
 
+   Tout->Branch("dipho_mass", &dipho_mass_, "dipho_mass/F");
    Tout->Branch("dipho_leadPt",     &dipho_leadPt_,     "dipho_leadPt/F");
    Tout->Branch("dipho_subleadPt",  &dipho_subleadPt_,  "dipho_subleadPt/F");
    Tout->Branch("dipho_leadEta",    &dipho_leadEta_,    "dipho_leadEta/F");
@@ -55,13 +83,29 @@ void WeightedTreeMaker()
    Tout->Branch("dijet_subleadEta", &dijet_subleadEta_, "dijet_subleadEta/F");
    Tout->Branch("dijet_leadPhi", &dijet_leadPhi_, "dijet_leadPhi/F");
    Tout->Branch("dijet_subleadPhi", &dijet_subleadPhi_, "dijet_subleadPhi/F");
+   Tout->Branch("dijet_minDRJetPho", &dijet_minDRJetPho_, "dijet_minDRJetPho/F");    
+   Tout->Branch("dijet_Mjj", &dijet_Mjj_, "dijet_Mjj/F");
 
-   Tout->Branch("dipho_pt", &dipho_pt_, "dipho_pt_/F");
    Tout->Branch("dipho_mva", &dipho_mva_, "dipho_mva/F");
+   Tout->Branch("dipho_leadIDMVA", &dipho_leadIDMVA_, "dipho_leadIDMVA/F");
+   Tout->Branch("dipho_subleadIDMVA", &dipho_subleadIDMVA_, "dipho_subleadIDMVA/F");
+   Tout->Branch("dipho_lead_genmatch",&dipho_lead_genmatch_,"dipho_lead_genmatch/F");
+   Tout->Branch("dipho_sublead_genmatch",&dipho_sublead_genmatch_,"dipho_sublead_genmatch/F");
+
+
+   Tout->Branch("dipho_sumpt", &dipho_sumpt_, "dipho_sumpt/F");
+   Tout->Branch("dipho_cosphi", &dipho_cosphi_, "dipho_cosphi/F");
+   Tout->Branch("dipho_lead_ptoM", &dipho_lead_ptoM_, "dipho_lead_ptoM/F");
+   Tout->Branch("dipho_sublead_ptoM", &dipho_sublead_ptoM_, "dipho_sublead_ptoM/F");
+   Tout->Branch("dijet_zep", &dijet_zep_, "dijet_zep/F");
+   Tout->Branch("dijet_abs_dEta", &dijet_abs_dEta_, "dijet_abs_dEta_mva/F");
+   Tout->Branch("cos_dijet_dipho_dphi", &cos_dijet_dipho_dphi_, "cos_dijet_dipho_dphi/F");
+
 
    Float_t         weight;
    Float_t         CMS_hgg_mass;
    Float_t         dZ;
+   Float_t 	   dipho_mass;
    Float_t         dipho_lead_ptoM;
    Float_t         dipho_sublead_ptoM;
    Float_t         dijet_leadPt;
@@ -73,15 +117,23 @@ void WeightedTreeMaker()
    Float_t         D0minus, dijet_dipho_pt, dipho_PToM, dipho_cosphi;
    Float_t         dipho_leadPt, dipho_leadEta, dipho_leadPhi;
    Float_t         dipho_subleadPt, dipho_subleadEta, dipho_subleadPhi;
-   Float_t         cos_thetaH;
+   Float_t 	   dipho_lead_genmatch, dipho_sublead_genmatch;
+  
    Float_t         dijet_nj; 
    Float_t         dipho_mva;
    Float_t         dipho_leadIDMVA;
    Float_t         dipho_subleadIDMVA;
 
+   Float_t	dipho_sumpt;
+   Float_t	dijet_zep;
+   Float_t	dijet_abs_dEta;
+   Float_t	cos_dijet_dipho_dphi;
+
+
    TBranch        *b_weight;   //!
    TBranch        *b_CMS_hgg_mass;   //!
    TBranch        *b_dZ;
+   TBranch	  *b_dipho_mass;
    TBranch        *b_dipho_lead_ptoM;
    TBranch        *b_dipho_sublead_ptoM;
    TBranch        *b_dijet_leadEta;   //!
@@ -99,14 +151,23 @@ void WeightedTreeMaker()
    TBranch        *b_dipho_mva;
    TBranch        *b_dipho_leadIDMVA;
    TBranch        *b_dipho_subleadIDMVA;
+   TBranch	  *b_dipho_lead_genmatch, *b_dipho_sublead_genmatch;
+
+   TBranch	*b_dipho_sumpt;
+   TBranch	*b_dijet_zep;
+   TBranch	*b_dijet_abs_dEta;
+   TBranch	*b_cos_dijet_dipho_dphi;
+   
 
    TTree *fChain;
    fChain = (TTree*)f->Get("tagsDumper/trees/Data_13TeV_VBFTag_2");
    fChain->SetBranchAddress("weight", &weight, &b_weight);
    fChain->SetBranchAddress("CMS_hgg_mass", &CMS_hgg_mass, &b_CMS_hgg_mass);
    fChain->SetBranchAddress("dZ", &dZ, &b_dZ);
+   fChain->SetBranchAddress("dipho_mass", &dipho_mass, &b_dipho_mass);
    fChain->SetBranchAddress("dipho_lead_ptoM", &dipho_lead_ptoM, &b_dipho_lead_ptoM);
    fChain->SetBranchAddress("dipho_sublead_ptoM", &dipho_sublead_ptoM, &b_dipho_sublead_ptoM);
+
    //4 momentum of photons
    fChain->SetBranchAddress("dipho_leadEta", &dipho_leadEta, &b_dipho_leadEta);
    fChain->SetBranchAddress("dipho_subleadEta", &dipho_subleadEta, &b_dipho_subleadEta);
@@ -116,6 +177,7 @@ void WeightedTreeMaker()
    fChain->SetBranchAddress("dipho_subleadPhi", &dipho_subleadPhi, &b_dipho_subleadPhi);
    fChain->SetBranchAddress("dipho_leadIDMVA", &dipho_leadIDMVA, &b_dipho_leadIDMVA);
    fChain->SetBranchAddress("dipho_subleadIDMVA", &dipho_subleadIDMVA, &b_dipho_subleadIDMVA);
+   
    //4-momentum of the jets
    fChain->SetBranchAddress("dijet_leadEta", &dijet_leadEta, &b_dijet_leadEta);
    fChain->SetBranchAddress("dijet_subleadEta", &dijet_subleadEta, &b_dijet_subleadEta);
@@ -135,6 +197,13 @@ void WeightedTreeMaker()
    fChain->SetBranchAddress("dipho_cosphi", &dipho_cosphi, &b_dipho_cosphi);
    fChain->SetBranchAddress("dijet_nj", &dijet_nj, &b_dijet_nj);
    fChain->SetBranchAddress("dipho_mva", &dipho_mva, &b_dipho_mva);
+   fChain->SetBranchAddress("dipho_lead_genmatch",&dipho_lead_genmatch,&b_dipho_lead_genmatch);
+   fChain->SetBranchAddress("dipho_sublead_genmatch",&dipho_sublead_genmatch,&b_dipho_sublead_genmatch);
+
+   fChain->SetBranchAddress("dipho_sumpt", &dipho_sumpt, &b_dipho_sumpt);
+   fChain->SetBranchAddress("dijet_zep", &dijet_zep, &b_dijet_zep);
+   fChain->SetBranchAddress("dijet_abs_dEta", &dijet_abs_dEta, &b_dijet_abs_dEta);
+   fChain->SetBranchAddress("dijet_abs_dEta", &dijet_abs_dEta, &b_dijet_abs_dEta);
 
    int nentries = fChain->GetEntries();
    cout<<"nentries "<<nentries<<endl;
@@ -142,45 +211,61 @@ void WeightedTreeMaker()
 
    for (int ij=0; ij<nentries; ij++) {
      fChain->GetEntry(ij);
-     if(dipho_leadIDMVA > -0.2 && dipho_subleadIDMVA > -0.2) continue;
+//     if (CMS_hgg_mass > 100 && CMS_hgg_mass < 180 && (CMS_hgg_mass > 135 || CMS_hgg_mass < 115)) 
+// if (CMS_hgg_mass > 100 && CMS_hgg_mass < 180 && (CMS_hgg_mass > 135 || CMS_hgg_mass < 115) && dipho_lead_ptoM > 0.33 && dipho_sublead_ptoM > 0.25 && dijet_leadPt > 40.0 && dijet_subleadPt > 30.0 && fabs(dijet_leadEta) < 4.7 && fabs(dijet_subleadEta) < 4.7 && fabs(dipho_leadEta) < 2.5 && fabs(dipho_subleadEta) < 2.5 && dipho_leadIDMVA > -0.9 && dipho_subleadIDMVA > -0.9)
+{
+    { 
      //The weight calculation for the data-driven fake calculation 
+     //  weight_ = weight;     
 
-        weight_ =  weight;
-	//PF	
-        if( dipho_leadIDMVA > -0.2 && dipho_subleadIDMVA < -0.2  ) 
-	  { 
-		Float_t prob_qcd_pf = 1.0, fake_fact_pf = 1.0;  
-		int bin_pf = std::max(1, std::min(subleading_EB_PF_qcdfraction->GetNbinsX(), subleading_EB_PF_qcdfraction->FindBin(dipho_subleadPt) ));
-                if(dipho_subleadEta < 1.5)        {prob_qcd_pf = subleading_EB_PF_qcdfraction->GetBinContent(bin_pf); fake_fact_pf = EB_subleading_fakefactor->GetBinContent(bin_pf);}
-		else if(dipho_subleadEta > 1.5)   {prob_qcd_pf = subleading_EE_PF_qcdfraction->GetBinContent(bin_pf); fake_fact_pf = EE_subleading_fakefactor->GetBinContent(bin_pf);}
-		weight_ =  weight_ * prob_qcd_pf * fake_fact_pf;
-                //std::cout << dipho_subleadPt << " | " << dipho_subleadEta << " | " << bin_pf << " | " << prob_qcd_pf << " | " << fake_fact_pf << " | " << weight_ << std::endl;
-	  } 
-	//FP
+    //Signal-Region
+
+       if(dipho_leadIDMVA > -0.2 && dipho_subleadIDMVA > -0.2) continue;
+ 	weight_ = weight;
+    //PF    
+        if( dipho_leadIDMVA > -0.2 && dipho_subleadIDMVA < -0.2  )
+          {
+                Float_t prob_qcd_pf = 1.0, fake_fact_pf = 1.0;
+                int bin_pf = std::max(1, std::min(subleading_EB_PF_qcdfraction->GetNbinsX(), subleading_EB_PF_qcdfraction->FindBin(dipho_subleadPt) ));
+                if( fabs(dipho_subleadEta) < 1.4442 )       {prob_qcd_pf = subleading_EB_PF_qcdfraction->GetBinContent(bin_pf); fake_fact_pf = EB_subleading_fakefactor->GetBinContent(bin_pf);}
+                else if( fabs(dipho_subleadEta) > 1.566 )   {prob_qcd_pf = subleading_EE_PF_qcdfraction->GetBinContent(bin_pf); fake_fact_pf = EE_subleading_fakefactor->GetBinContent(bin_pf);}
+                weight_ =  weight_ * prob_qcd_pf * fake_fact_pf;
+                std::cout << "PF:  " << " " << dipho_subleadPt << " | " << fabs(dipho_subleadEta) << " | " << bin_pf << " | " << prob_qcd_pf << " | " << fake_fact_pf << " | " << weight_ << std::endl;
+          }
+    //FP
         else if( dipho_leadIDMVA < -0.2 && dipho_subleadIDMVA > -0.2  )
-	  {
-		Float_t prob_qcd_fp = 1.0, fake_fact_fp = 1.0;
+          {
+                Float_t prob_qcd_fp = 1.0, fake_fact_fp = 1.0;
                 int bin_fp = std::max(1, std::min(leading_EB_FP_qcdfraction->GetNbinsX(), leading_EB_FP_qcdfraction->FindBin(dipho_leadPt) ));
-                if(dipho_leadEta < 1.5)       {prob_qcd_fp = leading_EB_FP_qcdfraction->GetBinContent(bin_fp); fake_fact_fp = EB_leading_fakefactor->GetBinContent(bin_fp);}
-                else if(dipho_leadEta > 1.5)  {prob_qcd_fp = leading_EE_FP_qcdfraction->GetBinContent(bin_fp); fake_fact_fp = EE_leading_fakefactor->GetBinContent(bin_fp);}
-		weight_ =  weight_ * prob_qcd_fp * fake_fact_fp;
-                //std::cout << dipho_leadPt << " | " << dipho_leadEta << " | " << bin_fp << " | " << prob_qcd_fp << " | " << fake_fact_fp << " | " << weight_ << std::endl;
-	  }
-	//FF
-	else if( dipho_leadIDMVA < -0.2 && dipho_subleadIDMVA < -0.2  ) 
-	  {
-                Float_t prob_qcd_ff_ld = 1.0, fake_fact_ff_ld = 1.0, prob_qcd_ff_sd = 1.0, fake_fact_ff_sd = 1.0; 
-                int bin_ff_ld = std::max(1, std::min(leading_EB_FF_qcdfraction->GetNbinsX(), subleading_EB_FF_qcdfraction->FindBin(dipho_leadPt) ));
-		int bin_ff_sd = std::max(1, std::min(leading_EB_FF_qcdfraction->GetNbinsX(), subleading_EB_FF_qcdfraction->FindBin(dipho_subleadPt) ));	
-                if(dipho_subleadEta < 1.5)       {prob_qcd_ff_sd = subleading_EB_FF_qcdfraction->GetBinContent(bin_ff_sd); fake_fact_ff_sd = EB_subleading_fakefactor->GetBinContent(bin_ff_sd);}
-                else if(dipho_subleadEta > 1.5)  {prob_qcd_ff_sd = subleading_EE_FF_qcdfraction->GetBinContent(bin_ff_sd); fake_fact_ff_sd = EE_subleading_fakefactor->GetBinContent(bin_ff_sd);}
-   	        if(dipho_leadEta < 1.5)          {prob_qcd_ff_ld = leading_EB_FF_qcdfraction->GetBinContent(bin_ff_ld); fake_fact_ff_ld = EB_leading_fakefactor->GetBinContent(bin_ff_ld);}
-                else if(dipho_leadEta > 1.5)     {prob_qcd_ff_ld = leading_EE_FF_qcdfraction->GetBinContent(bin_ff_ld); fake_fact_ff_ld = EE_leading_fakefactor->GetBinContent(bin_ff_ld);}
+                if( fabs(dipho_leadEta) < 1.4442 )      {prob_qcd_fp = leading_EB_FP_qcdfraction->GetBinContent(bin_fp); fake_fact_fp = EB_leading_fakefactor->GetBinContent(bin_fp);}
+                else if( fabs(dipho_leadEta) > 1.566 )  {prob_qcd_fp = leading_EE_FP_qcdfraction->GetBinContent(bin_fp); fake_fact_fp = EE_leading_fakefactor->GetBinContent(bin_fp);}
+                weight_ =  weight_ * prob_qcd_fp * fake_fact_fp;
+                std::cout << "FP:  " << " " << dipho_leadPt << " | " << fabs(dipho_leadEta) << " | " << bin_fp << " | " << prob_qcd_fp << " | " << fake_fact_fp << " | " << weight_ << std::endl;
+          }
+   //FF
+        else if( dipho_leadIDMVA < -0.2 && dipho_subleadIDMVA < -0.2  )
+          {
+                Float_t prob_qcd_ff_ld = 1.0, fake_fact_ff_ld = 1.0, prob_qcd_ff_sd = 1.0, fake_fact_ff_sd = 1.0;
+                int bin_ff_ld = std::max(1, std::min(leading_EB_FP_qcdfraction->GetNbinsX(), subleading_EB_PF_qcdfraction->FindBin(dipho_leadPt) ));
+                int bin_ff_sd = std::max(1, std::min(leading_EB_FP_qcdfraction->GetNbinsX(), subleading_EB_PF_qcdfraction->FindBin(dipho_subleadPt) ));
+                if(fabs(dipho_subleadEta) < 1.4442)      {prob_qcd_ff_sd = subleading_EB_PF_qcdfraction->GetBinContent(bin_ff_sd); fake_fact_ff_sd = EB_subleading_fakefactor->GetBinContent(bin_ff_sd);}
+                else if(fabs(dipho_subleadEta) > 1.566)  {prob_qcd_ff_sd = subleading_EE_PF_qcdfraction->GetBinContent(bin_ff_sd); fake_fact_ff_sd = EE_subleading_fakefactor->GetBinContent(bin_ff_sd);}
+                if(fabs(dipho_leadEta) < 1.4442)         {prob_qcd_ff_ld = leading_EB_FP_qcdfraction->GetBinContent(bin_ff_ld); fake_fact_ff_ld = EB_leading_fakefactor->GetBinContent(bin_ff_ld);}
+                else if(fabs(dipho_leadEta) > 1.566)     {prob_qcd_ff_ld = leading_EE_FP_qcdfraction->GetBinContent(bin_ff_ld); fake_fact_ff_ld = EE_leading_fakefactor->GetBinContent(bin_ff_ld);}
                 weight_ =  -1.0 * weight_ * prob_qcd_ff_sd * fake_fact_ff_sd * prob_qcd_ff_ld * fake_fact_ff_ld;
-                //std::cout << dipho_leadPt << " | " << dipho_leadEta << " | " << bin_ff_ld << " | " << prob_qcd_ff_ld << " | " << fake_fact_ff_ld << " | " << dipho_subleadPt << " | " << dipho_subleadEta << " | " << bin_ff_sd << " | " << prob_qcd_ff_sd << " | " << fake_fact_ff_sd << " | " <<  weight_ << std::endl;
-	  } 
+                std::cout << "FF:  " << " " << dipho_leadPt << " | " << fabs(dipho_leadEta) << " | " << bin_ff_ld << " | " << prob_qcd_ff_ld << " | " << fake_fact_ff_ld << " | " << dipho_subleadPt << " | " << dipho_subleadEta << " | " << bin_ff_sd << " | " << prob_qcd_ff_sd << " | " << fake_fact_ff_sd << " | " <<  weight_ << std::endl;
+          }
+
+        }
 
         CMS_hgg_mass_ = CMS_hgg_mass;
+	dipho_mass_ = dipho_mass;
+ 	dipho_leadIDMVA_ = dipho_leadIDMVA;        
+	dipho_subleadIDMVA_ =dipho_subleadIDMVA;
+	dipho_lead_genmatch_= dipho_lead_genmatch;
+	dipho_sublead_genmatch_ = dipho_sublead_genmatch;
+
+        dijet_dphi_ = dijet_dphi;
         dijet_Zep_ = dijet_Zep;
 	dijet_Mjj_ = dijet_Mjj;
 	dijet_dphi_ = dijet_dphi;
@@ -200,17 +285,23 @@ void WeightedTreeMaker()
 	dipho_PToM_ = dipho_PToM;
 	dipho_cosphi_ = dipho_cosphi;
 
+        dipho_sumpt_ = dipho_sumpt;
+   	dipho_cosphi_=	dipho_cosphi;
+     	dipho_lead_ptoM_ = dipho_lead_ptoM;;
+        dipho_sublead_ptoM_ = dipho_sublead_ptoM;
+   	dijet_zep_ =	dijet_zep;
+   	dijet_abs_dEta_ = dijet_abs_dEta;
+        cos_dijet_dipho_dphi_  = cos_dijet_dipho_dphi;
         //some constructive variables
-	TLorentzVector G1, G2;
-	G1.SetPtEtaPhiM(dipho_leadPt, dipho_leadEta, dipho_leadPhi, 0.0); G2.SetPtEtaPhiM(dipho_subleadPt, dipho_subleadEta, dipho_subleadPhi, 0.0);
-        dipho_Eta_ = (G1 + G2).Eta();
-	dipho_pt_  = (G1 + G2).Pt();
-        cos_thetaH_ = cos((G1 + G2).Theta());
+	// TLorentzVector G1, G2;
+        //	G1.SetPtEtaPhiM(dipho_leadPt, dipho_leadEta, dipho_leadPhi, 0.0); G2.SetPtEtaPhiM(dipho_subleadPt, dipho_subleadEta, dipho_subleadPhi, 0.0);
+        dipho_leadEta_ = dipho_leadEta;
+        // cos_thetaH_ = cos((G1 + G2).Theta());
         dipho_mva_ = dipho_mva;
 
         Tout->Fill();
-     }
-   
+ }    
+   }
    f->Close();
    fileout->cd();
    fileout->Write();
