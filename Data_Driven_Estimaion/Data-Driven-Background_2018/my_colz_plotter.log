@@ -1,0 +1,17 @@
+
+Processing my_colz_plotter.C...
+gjet
+Prompt-Prompt: 1687
+Prompt-Fake: 2539
+Fake-Prompt: 312
+Fake-Fake: 106
+Info in <TCanvas::Print>: file Plots/2D_photon_IDMVA_gjet_2018.png has been created
+Info in <TCanvas::Print>: pdf file Plots/2D_photon_IDMVA_gjet_2018.pdf has been created
+jj
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+Info in <TCanvas::Print>: file Plots/2D_photon_IDMVA_jj_2018.png has been created
+Info in <TCanvas::Print>: pdf file Plots/2D_photon_IDMVA_jj_2018.pdf has been created
+Prompt-Prompt: 67
+Prompt-Fake: 59
+Fake-Prompt: 86
+Fake-Fake: 15

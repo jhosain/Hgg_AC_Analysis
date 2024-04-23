@@ -1,0 +1,14 @@
+universe = vanilla
+executable = /usr/bin/python3
+arguments = trainmc_multiclassifier.py
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = trainmc_multiclassifier.py, output_data_driven_qcdbkg_diphoreweighted_2016PreVFP.root, output_data_driven_qcdbkg_diphoreweighted_2016PostVFP.root, output_data_driven_qcdbkg_diphoreweighted_2017.root, output_data_driven_qcdbkg_diphoreweighted_2018.root,   output_vbf_Reweighted_2016PreVFP.root, output_vbf_Reweighted_2016PostVFP.root, output_vbf_Reweighted_2017.root, output_vbf_Reweighted_2018.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_Pre_2016/Signal/output_GluGluHToGGPlusTwoJets_SM_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2016PreVFP.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_Post_2016/Signal/output_GluGluHToGGPlusTwoJets_SM_M125_TuneCP5_13TeV-amcatnlopowheg-minlo--pythia8_2016PostVFP.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_2017/Signal/output_GluGluHToGGPlusTwoJets_SM_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2017.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_2018/Signal/output_GluGluHToGGPlusTwoJets_SM_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2018.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_Pre_2016/Signal//output_GluGluHToGGPlusTwoJets_CPodd_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2016PreVFP.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_Post_2016/Signal//output_GluGluHToGGPlusTwoJets_CPodd_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2016PostVFP.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_2017/Signal//output_GluGluHToGGPlusTwoJets_CPodd_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2017.root, /afs/cern.ch/user/j/jhossain/eos/Hgg_AC_analysis/Prod_Ntuples_2024/Prod_2018/Signal//output_GluGluHToGGPlusTwoJets_CPodd_M125_TuneCP5_13TeV-amcatnlopowheg-minlo-pythia8_2018.root
+output = job_$(Cluster)_$(Process).out
+error = job_$(Cluster)_$(Process).err
+log = job_$(Cluster)_$(Process).log
+
++JobFlavour = "workday" 
+
+queue 1
+

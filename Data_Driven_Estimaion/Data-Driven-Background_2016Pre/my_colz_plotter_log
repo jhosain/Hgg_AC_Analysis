@@ -1,0 +1,23 @@
+
+gjet
+Prompt-Prompt: 6592
+Prompt-Fake: 10585
+Fake-Prompt: 1203
+Fake-Fake: 322
+Info in <TCanvas::Print>: file Plots/2D_photon_IDMVA_gjet_2016PreVFP.png has been created
+Info in <TCanvas::Print>: pdf file Plots/2D_photon_IDMVA_gjet_2016PreVFP.pdf has been created
+jj
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+Info in <TCanvas::Print>: file Plots/2D_photon_IDMVA_jj_2016PreVFP.png has been created
+Info in <TCanvas::Print>: pdf file Plots/2D_photon_IDMVA_jj_2016PreVFP.pdf has been created
+Prompt-Prompt: 36
+Prompt-Fake: 44
+Fake-Prompt: 53
+Fake-Fake: 8
+ggjets
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c1
+Info in <TCanvas::Print>: file Plots/2D_photon_IDMVA_ggjets_2016PreVFP.png has been created
+Prompt-Prompt: 591287
+Prompt-Fake: 27010
+Fake-Prompt: 26917
+Fake-Fake: 1348

@@ -1,0 +1,365 @@
+
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 77966
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 51618
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 366736
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 21398
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 151
+Integral Data: 26348
+Integral DD: 17057.6
+Integral ggjets: 11163.8
+Integral DD+MC: 28221.4
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dipho_mass.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_mass.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 26348
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 51618
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 366736
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 21398
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 151
+Integral Data: 26007
+Integral DD: 16831.8
+Integral ggjets: 10966
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 27797.8
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dipho_lead_ptoM.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_lead_ptoM.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 26348
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 51618
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 366736
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 21398
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 151
+Integral Data: 25834
+Integral DD: 16841.8
+Integral ggjets: 10812.1
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 27653.9
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_sublead_ptoM.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_sublead_ptoM.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28021
+Integral DD: 18256.3
+Integral ggjets: 11725.3
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 29981.6
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_zep.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_zep.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 28120
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 26444
+Integral DD: 17159.8
+Integral ggjets: 10604.5
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 27764.4
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_leadPt.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_leadPt.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 28120
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 26523
+Integral DD: 17358.8
+Integral ggjets: 10647.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 28006.4
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_subleadPt.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_subleadPt.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28120
+Integral DD: 18258.3
+Integral ggjets: 11761.7
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 30019.9
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_leadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_leadEta.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28120
+Integral DD: 18258.3
+Integral ggjets: 11761.7
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 30019.9
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_subleadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_subleadEta.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 27923
+Integral DD: 18068.3
+Integral ggjets: 11680.3
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 29748.5
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_minDRJetPho.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_minDRJetPho.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28115
+Integral DD: 18249.3
+Integral ggjets: 11759.4
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 30008.6
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dipho_cosphi.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_cosphi.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28120
+Integral DD: 18258.3
+Integral ggjets: 11761.7
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 30020
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dipho_leadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_leadEta.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28120
+Integral DD: 18258.3
+Integral ggjets: 11761.7
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 30020
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dipho_subleadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_subleadEta.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 28120
+Integral DD: 18258.4
+Integral ggjets: 11763
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 30021.4
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dipho_mva.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_mva.pdf has been created
+TFile: name=output_Data_2016PostVFP.root, title=, option=READ
+nentries 205286
+count : 83558
+TFile: name=output_data_driven_bkg_2016PostVFP.root, title=, option=READ
+nentries 142241
+count : 55438
+TFile: name=output_ggjets_2016PostVFP.root, title=, option=READ
+nentries 686774
+count : 378757
+TFile: name=output_gjet_2016PostVFP.root, title=, option=READ
+nentries 49992
+count : 24194
+TFile: name=output_jj_2016PostVFP.root, title=, option=READ
+nentries 339
+count : 158
+Integral Data: 27046
+Integral DD: 17610.7
+Integral ggjets: 11072.7
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 28683.4
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Warning in <TPad::ResizePad>: c3 height changed from 0 to 10
+
+Info in <TCanvas::Print>: file Plots/validation_dijet_Mjj.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_Mjj.pdf has been created
+Error in <TApplication::ExecuteFile>: macro .q not found in path .:/cvmfs/cms.cern.ch/slc7_amd64_gcc700/lcg/root/6.12.07-gnimlf5/macros

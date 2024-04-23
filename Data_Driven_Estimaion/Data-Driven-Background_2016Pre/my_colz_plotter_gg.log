@@ -1,0 +1,8 @@
+
+Processing my_colz_plotter_gg.C...
+ggjets
+Prompt-Prompt: 1118297
+Prompt-Fake: 56815
+Fake-Prompt: 52991
+Fake-Fake: 2921
+Info in <TCanvas::Print>: file Plots/2D_photon_IDMVA_ggjets_2018.png has been created

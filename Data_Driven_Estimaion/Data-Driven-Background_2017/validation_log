@@ -1,0 +1,310 @@
+
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67478
+Integral DD: 46657.4
+Integral ggjets: 27600.6
+Integral DD+MC: 74257.9
+Info in <TCanvas::Print>: file Plots/validation_dipho_mass.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_mass.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 67478
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 66584
+Integral DD: 46074.3
+Integral ggjets: 27154.9
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 73229.2
+Info in <TCanvas::Print>: file Plots/validation_dipho_lead_ptoM.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_lead_ptoM.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 67478
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 66384
+Integral DD: 46042.3
+Integral ggjets: 26951.4
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 72993.7
+Info in <TCanvas::Print>: file Plots/validation_sublead_ptoM.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_sublead_ptoM.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67313
+Integral DD: 46553.5
+Integral ggjets: 27518.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74072.1
+Info in <TCanvas::Print>: file Plots/validation_dijet_zep.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_zep.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 67478
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 63332
+Integral DD: 43973.7
+Integral ggjets: 25249.8
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 69223.5
+Info in <TCanvas::Print>: file Plots/validation_dijet_leadPt.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_leadPt.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 67478
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 63466
+Integral DD: 44270.7
+Integral ggjets: 25313.7
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 69584.5
+Info in <TCanvas::Print>: file Plots/validation_dijet_subleadPt.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_subleadPt.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67478
+Integral DD: 46657.5
+Integral ggjets: 27600.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74258.1
+Info in <TCanvas::Print>: file Plots/validation_dijet_leadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_leadEta.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67478
+Integral DD: 46657.5
+Integral ggjets: 27600.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74258.1
+Info in <TCanvas::Print>: file Plots/validation_dijet_subleadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_subleadEta.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67116
+Integral DD: 46368.5
+Integral ggjets: 27436.5
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 73805
+Info in <TCanvas::Print>: file Plots/validation_dijet_minDRJetPho.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_minDRJetPho.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67465
+Integral DD: 46659.9
+Integral ggjets: 27595.2
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74255.1
+Info in <TCanvas::Print>: file Plots/validation_dipho_cosphi.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_cosphi.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67478
+Integral DD: 46657.3
+Integral ggjets: 27600.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74257.8
+Info in <TCanvas::Print>: file Plots/validation_dipho_leadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_leadEta.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67478
+Integral DD: 46657.5
+Integral ggjets: 27600.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74258.1
+Info in <TCanvas::Print>: file Plots/validation_dipho_subleadEta.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_subleadEta.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 227005
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 159527
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 792077
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 9203
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 314
+Integral Data: 67478
+Integral DD: 46657.5
+Integral ggjets: 27600.6
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 74258.1
+Info in <TCanvas::Print>: file Plots/validation_dipho_mva.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dipho_mva.pdf has been created
+TFile: name=output_Data_2017.root, title=, option=READ
+nentries 393448
+count : 165803
+TFile: name=output_data_driven_bkg_2017.root, title=, option=READ
+nentries 280939
+count : 113472
+TFile: name=output_ggjets_2017.root, title=, option=READ
+nentries 1215869
+count : 674169
+TFile: name=output_gjet_2017.root, title=, option=READ
+nentries 14936
+count : 7169
+TFile: name=output_jj_2017.root, title=, option=READ
+nentries 563
+count : 236
+Integral Data: 50308
+Integral DD: 33986.6
+Integral ggjets: 22503.2
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: c
+Integral DD+MC: 56489.8
+Error in <TPad::TPad>: illegal height: 0.000000
+Info in <TCanvas::Print>: file Plots/validation_dijet_Mjj.png has been created
+Info in <TCanvas::Print>: pdf file Plots/validation_dijet_Mjj.pdf has been created
+Error in <TApplication::ExecuteFile>: macro .q not found in path .:/usr/share/root/macros
